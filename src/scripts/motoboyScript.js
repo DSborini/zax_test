@@ -4,7 +4,7 @@ import { stores } from "../data/storeData.js";
 // Digite na variável a seguir o motoboy que deseja consultar.
 const selectedMotoboy = 'Moto 4';
 
-const missingInfoMessage = "Informações ausentes. É necessário informar um motoboy.";
+const missingInfoMessage = 'Informações ausentes. É necessário informar um motoboy.';
 const invalidInfoMessage = `Informações invalidas. É necessário informar um motoboy que existe, no formato "Moto <numero>"`;
 
 const percentage = (percentage, totalValue) => {
@@ -30,10 +30,10 @@ const getMotoboyResults = ({ name, deliveryPrice, stores }, storesData) => {
 };
 
 const getMotoboyInfo = (motoboySelected) => {
-  if (motoboySelected === undefined) return missingInfoMessage;
+  if (motoboySelected === undefined || motoboySelected === '') return console.log(missingInfoMessage);
   const motoboyExists = motoboys.find(({ name }) => motoboySelected === name);
   if (motoboyExists) return getMotoboyResults(motoboyExists, stores);
-  return invalidInfoMessage;
+  return console.log(invalidInfoMessage);
 };
 
 getMotoboyInfo(selectedMotoboy);
