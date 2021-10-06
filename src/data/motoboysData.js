@@ -1,30 +1,30 @@
 const motoboys = [
   {
-    "name": "deliveryman1",
+    "name": "Moto 1",
     "deliveryPrice": 2,
     "stores": [1, 2, 3],
   },
   {
-    "name": "deliveryman2",
+    "name": "Moto 2",
     "deliveryPrice": 2,
     "stores": [1, 2, 3],
   },
   {
-    "name": "deliveryman3",
+    "name": "Moto 3",
     "deliveryPrice": 2,
     "stores": [1, 2, 3],
   },
   {
-    "name": "deliveryman4",
+    "name": "Moto 4",
     "deliveryPrice": 2,
     "stores": [1],
   },
   {
-    "name": "deliveryman5",
+    "name": "Moto 5",
     "deliveryPrice": 3,
     "stores": [1, 2, 3],
   }
 ];
 
-export default motoboys;
+export default { motoboys };
   
