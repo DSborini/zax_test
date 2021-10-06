@@ -1,9 +1,11 @@
 import { motoboys } from "../data/motoboysData.js";
 import { stores } from "../data/storeData.js";
 
+// Digite na variável a seguir o motoboy que deseja consultar.
+const selectedMotoboy = 'Moto 4';
+
 const missingInfoMessage = "Informações ausentes. É necessário informar um motoboy.";
 const invalidInfoMessage = `Informações invalidas. É necessário informar um motoboy que existe, no formato "Moto <numero>"`;
-// const sucessMessage;
 
 const percentage = (percentage, totalValue) => {
   return (percentage * totalValue) / 100;
@@ -24,7 +26,7 @@ const getMotoboyResults = ({ name, deliveryPrice, stores }, storesData) => {
   let fixedValue = deliveryPrice * numberOfOrders;
   const totalValue = amountReceived + fixedValue;
 
-  console.log(`${name} possui um total de ${numberOfOrders} pedidos, das lojas: ${stores}. Receberá no total o valor de: R$ ${totalValue}.`);
+  console.log(`${name} possui um total de ${numberOfOrders} pedidos, das loja(s): ${stores}. Receberá no total o valor de: R$ ${totalValue}.`);
 };
 
 const getMotoboyInfo = (motoboySelected) => {
@@ -34,5 +36,4 @@ const getMotoboyInfo = (motoboySelected) => {
   return invalidInfoMessage;
 };
 
-getMotoboyInfo('Moto 3');
-// console.log(percentage(5, 550));
+getMotoboyInfo(selectedMotoboy);
