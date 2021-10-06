@@ -1,4 +1,4 @@
-const stores = [
+export const stores = [
   {
     "name": "Loja 1",
     "orders": [50, 50, 50],
@@ -15,5 +15,3 @@ const stores = [
     "payment": 15, 
   },
 ];
-
-export default stores;
