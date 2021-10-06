@@ -25,4 +25,6 @@ const motoboys = [
     "stores": [1, 2, 3],
   }
 ];
+
+export default motoboys;
   
